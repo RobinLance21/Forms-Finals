@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel = "icon" href = "media/Food.gif" 
+        type = "image/x-icon">
+    <style>
+        html{
+          scroll-behavior: smooth;
+        }
+        input[type=text], select {
+        width: 50%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+        margin-top: auto;
+        font-family: cursive;
+        }
+        input[type=Location], select {
+         width: 90%;
+         height: 200px;
+        font-size: 30px;
+        }
+        input[type=radio]{
+          margin-left: 200px;
+          margin-right: 10px;
+        }
+        input[type=submit] {
+        background-color: #E6C97D;
+        position: relative;
+        right: 150px;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        width: 850px;
+        font-family: cursive;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        margin-left: 175px;
+      }
+
+        input[type=reset] {
+        background-color: #E6C97D;
+        position: relative;
+        right: 150px;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        width: 850px;
+        font-family: cursive;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        margin-left: 175px;
+      }
+        div{
+          background-color: #FFFDD0;
+          width: 60%;
+          height: 100%;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        h1{
+          font-family: cursive;
+        }
+        h2{
+          font-family: cursive;
+        }
+        h3{
+          font-family: cursive;
+          margin-left: 50px;
+        }
+        .border{
+          border-style: double
+        }
+
+        .header{
+          background-color: #BB9065;
+          box-shadow: 5px 10px #888888
+        }
+        .logos{
+          width: 300px;
+          height: 300px;
+        }
+        .logos1{
+          margin-left: 100px;
+          width: 300px;
+          height: 300px;
+        }
+        .logos2{
+          width: 300px;
+          height: 300px;
+          margin-left: 10px;
+          margin-right: 10px;
+        } 
+        .logos3{
+          width: 400px;
+          height: 300px;
+          margin-left: 10px;
+          margin-right: 5px;
+        }
+        .logos5{
+          height: 300px;
+          width: 300px;
+        }
+        .logos6{
+          height: 300px;
+          width: 300px;
+          margin-right: 10px;
+          margin-left: -50px;
+        }
+        .logos7{
+          height: 400px;
+          width: 400px;
+
+        }
+        .ingredients{
+          height: 200px;
+          width: 200px;
+        }
+        .bun{
+          margin-left: 500px;
+          margin-right: 500px;
+        }
+        .fries{
+          font-size: 30px;
+          width: 190px;
+          height: 60px;
+          margin-left: -1px;
+        }
+        .juice{
+          font-size: 30px;
+          width: 190px;
+          height: 60px;
+          font-family: cursive;
+        
+        }
+  
+        .back{
+          margin-top:5%;
+          display: inline-block;
+          text-decoration: none;
+          font-family: 'Courier New', Courier, monospace;
+          color:rgb(0, 0, 0);
+          border: 3px solid rgb(0, 0, 0);
+          padding: 12px 34px;
+          font-size: 25px;
+          background: transparent;
+          font-weight: bold;
+          margin-left: -170px;
+        }
+        .back:hover{
+          background:#BB9065;
+          transition: 0.5s;
+        }
+
+        .drinks{
+          margin-right: -10px
+        }
+        .back1{
+          margin-top:5%;
+          display: inline-block;
+          text-decoration: none;
+          font-family: 'Courier New', Courier, monospace;
+          color:rgb(0, 0, 0);
+          border: 3px solid rgb(0, 0, 0);
+          padding: 12px 34px;
+          font-size: 25px;
+          background: transparent;
+          font-weight: bold;
+          margin-left: 10px;
+        }
+
+        .back1:hover{
+          background:#BB9065;
+          transition: 0.5s;
+        }
+          .back2{
+          margin-top:5%;
+          display: inline-block;
+          text-decoration: none;
+          font-family: 'Courier New', Courier, monospace;
+          color:rgb(0, 0, 0);
+          border: 3px solid rgb(0, 0, 0);
+          padding: 12px 34px;
+          font-size: 25px;
+          background: transparent;
+          font-weight: bold;
+          margin-left: 10px;
+        }
+
+        .back2:hover{
+          background:#BB9065;
+          transition: 0.5s;
+        }
+        .back3
+          {
+            margin-top:5%;
+            display: inline-block;
+            text-decoration: none;
+            font-family: 'Courier New', Courier, monospace;
+            color:rgb(0, 0, 0);
+            border: 3px solid rgb(0, 0, 0);
+            padding: 12px 34px;
+            font-size: 25px;
+            background: transparent;
+            font-weight: bold;
+            margin-left: 10px;
+          }
+        .back3:hover{
+          background:#BB9065;
+          transition: 0.5s;
+        }
+          .back4{
+            margin-top:5%;
+            display: inline-block;
+            text-decoration: none;
+            font-family: 'Courier New', Courier, monospace;
+            color:rgb(0, 0, 0);
+            border: 3px solid rgb(0, 0, 0);
+            padding: 12px 34px;
+            font-size: 25px;
+            background: transparent;
+            font-weight: bold;
+          }
+          .back4:hover{
+          background:#BB9065;
+          transition: 0.5s;
+          }
+        
+    </style>
+</head>
+<body background="/media/Food.gif">
+
+  
+  <div class="header"><center><h1>Customer Information</h1></center></div>
+  
+    <div class="border"><form action=" " method="GET" enctype="multipart/form-data"></div>
+        <div>
+          <label for="name">Full Name</label>
+          <input type="text" name="name" id="name" required>
+      </div>
+      <div>
+        <label for="name">Complete address</label>
+        <input type="text" name="address" id="address" required>
+    </div>
+    <div>
+      <label for="name">Contact Number</label>
+      <input type="text" name="Number" id="Number" required>
+  </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="text" name="email" id="email" required>
+      </div>
+      <div>
+        <label for="email">Location</label>
+        <input type="Location" name="Location" id="Location" required>
+      </div>
+    
+      <div class="header" id="TOPPEST"><center><h1>Foods</h1></center></div>
+      
+        <div><center><h2>Click on the picture of the food you want to order</h2></center></div>
+       <div>
+        <a href = "#burger"><img src="/media/Burger.gif" class="logos">
+        <a href = "#pizza"><img src="/media/pizza.gif" class="logos1">
+        <a href = "#pasta"><img src="/media/pasta.gif" class="logos2">
+        <a href = "#fries"><img src="/media/fries.gif" class="logos3" style="margin-left: 150px;">
+       <a href = "#drinks"><img src="/media/drinks.gif" class="logos"> 
+      </div>
+
+      <div id="burger" class="header"><center><h1></a>Burger</h1></center></div>
+       <div><center><img src="/media/burger2.gif" class="logos4"></center>
+
+        <h3>Pick a bun:</h3>
+        <input type="radio" name="choices1" id="whitebun" value="whitebun">
+           <label for="whitebun">White Bun</label>
+       <input type="radio" name="choices1" id="wheatbun" value="wheatbun">
+           <label for="wheatbun">Wheat Bun</label> 
+        <center><img src="/media/bun.jpg" class="ingredients"></center></a>
+          
+ 
+        <h3>choose your Toppings:</h3>
+        <input type="radio" name="choices2" id="cheese" value="cheese">
+           <label for="cheese">Cheese</label>
+        <div><center><img src="/media/cheese.jpg" class="ingredients"></center></div>
+       
+ 
+        <h3>Lettuce</h3>
+        <input type="radio" name="choices3" id="lettuce" value="lettuce">
+           <label for="lettuce">Lettuce</label>
+        <div><center><img src="/media/lettuce.jpg" class="ingredients"></center></div>
+        
+        <h3>Tomato</h3>
+        <input type="radio" name="choices4" id="tomato" value="tomato">
+           <label for="tomato">Tomato</label>
+        <div><center><img src="/media/tomato.jpg" class="ingredients"></center></div>
+ 
+        <h3>Bacon</h3>
+        <input type="radio" name="choices5" id="bacon" value="bacon">
+           <label for="bacon">Bacon</label>
+        <div><center><img src="/media/bacon.jpg" class="ingredients"></center></div>
+ 
+ 
+ 
+        <h3>Patty</h3>
+        <input type="radio" name="choices6" id="beef" value="beef">
+           <label for="beef">Beef</label>
+           <input type="radio" name="choices6" id="chicken" value="chicken">
+           <label for="chicken">Chicken</label>
+           <input type="radio" name="choices6" id="plantbase" value="plantbase">
+           <label for="plantbase">Plant base Patty</label>
+       <div><center><img src="/media/patty.jpg" class="ingredients"></center></div>
+       <div><a href="#TOPPEST" class="back" style="margin-top: 5px; margin-left: 230px;">GO TO TOP</a></div> 
+    </div>
+
+       <div id="pizza" class="header"><center><h1>Pizza</h1></center></div>
+       <div><center><img src="/media/pizza2.gif" class="logos5"></center>
+        <h3>Choose your Toppings:</h3>
+        <h3>Pineapple</h3>
+        <input type="radio" name="choice7" id="pineapple" value="pineapple">
+        <label for="pineapple">Pineapple</label>
+        <div><center><img src="/media/pineapple.jpg" class="ingredients"></center></div>
+ 
+ 
+        <h3>Pepperoni</h3>
+        <input type="radio" name="choice8" id="pepperoni" value="pepperoni">
+        <label for="pepperoni">Pepperoni</label>
+        <div><center><img src="/media/pepperoni.jpg" class="ingredients"></center></div>
+ 
+ 
+        <h3>Mushroom</h3>
+        <input type="radio" name="choice9" id="mushroom" value="mushroom">
+        <label for="mushroom">Mushroom</label>
+        <div><center><img src="/media/mushroom.jpg" class="ingredients"></center></div>
+ 
+ 
+        <h3>Bacon</h3>
+        <input type="radio" name="choice10" id="bacon1" value="bacon1">
+        <label for="bacon1">Bacon</label>
+        <div><center><img src="/media/bacon.jpg" class="ingredients"></center></div>
+ 
+ 
+        <h3>Olive</h3>
+        <input type="radio" name="choice11" id="olive" value="olive">
+        <label for="olive">Olive</label>
+        <div><center><img src="/media/Olive.jpg" class="ingredients"></center></div>
+ 
+ 
+        <h3>Sausage</h3>
+        <input type="radio" name="choice12" id="sausage" value="sausage">
+        <label for="sausage">Sausage</label>
+        <div><center><img src="/media/sausage.jpg" class="ingredients"></center></div>
+        <a href="#TOPPEST" class="back1" style="margin-left: 450px;">GO TO TOP</a></div> 
+      </div> 
+        
+      <div id="pasta" class="header"><center><h1>Pasta</h1></center></div>
+      <div id="pasta"><center><img src="/media/Pasta2.gif" class="logos5"></center>
+      <h3>Choose your Pasta Flavor:</h3>
+      <center><input type="radio" name="choice5" id="spag" value="spag">
+      <label for="spag">Spaghetti</label>
+      <input type="radio" name="choice5" id="carbon" value="carbon">
+      <label for="carbon">Carbonara</label></center></div>
+      <div><a href="#TOPPEST" class="back2" style="margin-top: 5px; margin-left: 450px;">GO TO TOP</a></div>
+
+
+
+      <div id="fries" class="header"><center><h1>Fries</h1></center></div>
+      <div><center><img src="/media/fries2.gif" class="logos5"></center></div>
+          <div><label>Sizes</label>
+          <select id="fries" class="fries">
+            <option>small</option>
+            <option>medium</option>
+            <option>Large</option>
+          </div>
+         
+      <input type="radio" name="choices6" id="bbq" value="bbq" style="margin-left: 10px;">
+      <label for="bbq">BBQ</label>
+      <input type="radio" name="choices6" id="cheese" value="cheese"style="margin-left: 150px;">
+      <label for="cheese">Cheese</label>
+      <input type="radio" name="choices6" id="sour" value="sour"style="margin-left: 170px;">
+      <label for="sour">Sour Cream</label>
+      <div><a href="#TOPPEST" class="back4" style="margin-top: 5px; margin-left: 220px;">GO TO TOP</a></div></div>
+
+
+      <div id="drinks" class="header"><center><h1>Drinks</h1></center></div>
+      <div><center><img src="/media/drinks2.gif" class="logos6"></center>
+        <label >Sizes</label>
+           <select id="juice" class="juice">
+             <option>small</option>
+             <option>medium</option>
+              <option>large</option>
+
+      <input type="radio" name="choices7" id="soda" value="soda" style="margin-left: 10px;">
+      <label for="soda">Soda</label>
+      <input type="radio" name="choices7" id="icetea" value="icetea" style="margin-left: 150px;" >
+      <label for="icetea">Ice tea</label>
+      <input type="radio" name="choices7" id="milktea" value="milktea" style="margin-left: 100px;">
+      <label for="milktea">Milk Tea</label>
+      <input type="radio" name="choices7" id="orange" value="orange" style="margin-left: 130px;" >
+      <label for="orange">Orange Juice<label>
+      <div>
+      <a href="#TOPPEST" class="back4" style="margin-top: 5px; margin-left: 220px;">GO TO TOP</a></div>
+      </div>
+        
+
+
+      <div id="drinks" class="header"><center><h1>Check-Out</h1></center></div>
+      <div><center><img src="/media/Delivery.gif"></center>
+      <div><input type="radio" name="choices8" id="Delivery" value="Delivery" style="margin-left: 300px;">
+      <label for="Delivery">Delivery</label></div>
+
+      <div class="icon1"><center><img src="/media/Pick up.jpg" class="logos7"></center>
+      <input type="radio" name="choices8" id="Pick-up" value="Pick-up" style="margin-left: 300px;"><label for="Pick-up">Pick-up</label></div>
+      <br>
+      <input type="submit" id="submit" value="submit" style="margin-left: 280px;">
+
+      <input type="reset" id="reset" value="reset" style="margin-left: 280px;"></div>
+    </div>
+      
+
+    </form>
+</body>
+</html>
